@@ -2,9 +2,11 @@ package db
 
 import (
 	"context"
-	"github.com/RoyerHernandez/socialNetWork.git/models"
-	"go.mongodb.org/mongo-driver/bson/primitive"
 	"time"
+
+	"go.mongodb.org/mongo-driver/bson/primitive"
+
+	"github.com/RoyerHernandez/socialNetWork.git/models"
 )
 
 func InsertRegister(user models.User) (string, bool, error) {

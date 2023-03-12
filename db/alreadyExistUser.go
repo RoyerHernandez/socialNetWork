@@ -2,9 +2,11 @@ package db
 
 import (
 	"context"
-	"github.com/RoyerHernandez/socialNetWork.git/models"
-	"go.mongodb.org/mongo-driver/bson"
 	"time"
+
+	"go.mongodb.org/mongo-driver/bson"
+
+	"github.com/RoyerHernandez/socialNetWork.git/models"
 )
 
 func AlreadyExistUser(email string) (models.User, bool, string) {

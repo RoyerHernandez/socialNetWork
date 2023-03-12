@@ -2,9 +2,11 @@ package db
 
 import (
 	"context"
+	"fmt"
+	"log"
+
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
-	"log"
 )
 
 var MongoCN = connectionDB()
@@ -21,7 +23,7 @@ func connectionDB() *mongo.Client {
 		log.Fatal(err.Error())
 		return client
 	}
-	log.Fatal("connection successful to data base")
+	fmt.Println("connection successful to data base")
 	return client
 }
 
